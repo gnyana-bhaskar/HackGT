@@ -1,20 +1,39 @@
+import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import InventoryView from './components/InventoryView';
-import Login from './components/Login';
-import React from  'react';
+import './App.css';
+import Home from "./components/Home";
+import NavBar from './components/NavBar';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import InventoryUpdate from './components/InventoryUpdate';
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
     <div>
-      <Router>
-        <Switch>
-          <Route exact path = "/components">
-            <InventoryView/>
-          </Route>
-        </Switch>
-      </Router>
-    </div>
+    <Router>
+      <NavBar/>
+      <Switch>
+        <Route exact path="/">
+          <Home>
+
+          </Home>
+        </Route>
+
+        <Route exact path="/inventoryupdate">
+          <InventoryUpdate/>
+        </Route>
+        <Route exact path="/dashboard">
+      <Dashboard></Dashboard>
+        </Route>
+      </Switch>
+    </Router>
+
+  </div>
   );
 }
 
