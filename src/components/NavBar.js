@@ -24,7 +24,7 @@ const NavBar = props => {
           Name
           </Heading>
         </Link>
-        <Link to="/browse">
+        <Link to="/dashboard" >
         <Button
         ml={6}
         size="sm"
@@ -41,7 +41,7 @@ const NavBar = props => {
           ],
         }}
         >
-          Browse
+          Dashboard
         </Button>
         </Link>
         <Link to="/go-live">
