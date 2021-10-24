@@ -20,7 +20,6 @@ const Dashboard = () => {
                 Inventory
             </Box>
             </Link>
-
             <Link to="/cv">
             <Box bg="purple.900" w="50%" p={10} color="white" borderRadius={10} shadow="dark-lg" height="20px" width= {750} >
                 Inventory Update

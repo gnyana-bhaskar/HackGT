@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import data from '../server/dummy.json';
-
 function Text(props) {
     const [selectedFile, setSelectedFile] = useState();
 	//const [isFilePicked, setIsFilePicked] = useState(false);
