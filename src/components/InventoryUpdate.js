@@ -5,6 +5,7 @@ import { Table, Thead, Tbody, Tr, Th, Td, chakra } from "@chakra-ui/react"
 import { TriangleDownIcon, TriangleUpIcon } from "@chakra-ui/icons"
 import { useTable, useSortBy } from "react-table"
 import React,{useState,useEffect} from 'react';
+import { Input } from "@chakra-ui/react";
 var outputData = [];
 var stockData = [];
 

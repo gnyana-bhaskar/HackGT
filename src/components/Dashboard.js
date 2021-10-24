@@ -20,16 +20,26 @@ const Dashboard = () => {
                 Inventory
             </Box>
             </Link>
-            <Box bg="purple.900" w="50%" p={10} color="white" borderRadius={10} shadow="dark-lg" >
+            <Link to="/cv">
+            <Box bg="purple.900" w="50%" p={10} color="white" borderRadius={10} shadow="dark-lg" height="20px" width= {750} >
+                Inventory Update
+                </Box>
+                </Link>
+            <Box bg="purple.900" w="50%" p={10} color="white" borderRadius={10} shadow="dark-lg" height="20px" width= {750}>
                 UV sensor
                 </Box>
-                <Box bg="purple.900"w="50%" p={10} color="white" borderRadius={10} shadow="dark-lg" > 
+                <Link to="/tab">
+                <Box bg="purple.900" w="50%" p={10} color="white" borderRadius={10} shadow="dark-lg" height="20px" width= {750}> 
                 analytics
                 </Box>
-                
-                <Box bg="purple.900" w="50%" p={10} color="white" borderRadius={10} shadow="dark-lg" >
+                </Link>
+                <Link to="/maps">
+                <Box bg="purple.900" w="50%" p={10} color="white" borderRadius={10} shadow="dark-lg" height="20px" width= {750} >
                 donations
                 </Box>
+
+
+                </Link>
             
                 </Stack>
                 </Box>
