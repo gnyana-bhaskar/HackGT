@@ -21,13 +21,13 @@ const Home = () => {
             p={4}
             align="center"
             direction="column" >
-          <Text mb={8} fontSize="2xl" fontWeight="bold">
-            Optimizing the distribution of grocery waste for sustainablity shit cuz we need earth to live 
+          <Text mb={8} fontSize="5xl" fontWeight="bold">
+          sustainabl.
           </Text>
 
-          <Link to= "/inventoryupdate" direction='column'>
-            <Button variant="solid" bg="teal.900" size="lg">
-              <Text color="white">GROCERY STORE </Text>
+          <Link to= "/dashboard" direction='column'>
+            <Button variant="solid" bg="purple.900" size="lg" _hover="purple.500">
+              <Text color="white"> DASHBOARD </Text>
             </Button>
           </Link>
         </Flex>

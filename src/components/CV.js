@@ -1,4 +1,6 @@
 import React from "react";
+const fs = require('fs');
+
 function Text(props) {
     var style = {
       paddingTop: 5,
@@ -42,7 +44,11 @@ function Text(props) {
       };
       this.changeHandler = this.changeHandler.bind(this);
       this.AddElementsOnSubmit = this.AddElementsOnSubmit.bind(this);
+      this.toJSON = this.toJSON.bind(this);
     }
+
+
+
     changeHandler(event) {
       this.setState({ [event.target.name]: event.target.value });
     }
@@ -54,6 +60,23 @@ function Text(props) {
       var elements = this.state.items.slice();
       elements.push({fName: firstName, lName: lastName});
       this.setState({ items: elements, firstName: "", lastName: "" });
+      this.toJSON();
+    }
+
+    toJSON() {
+      let json = {
+        items : this.state.items,
+        firstName : this.state.firstName,
+        lastName : this.state.lastName
+      };
+      
+      let existingData = JSON.parse(localStorage.getItem("data"));
+      existingData.push(json);
+      localStorage.setItem("data", JSON.stringify(existingData));
+  
+      console.log("here")
+      console.log(JSON.parse(localStorage.getItem("data")));
+  
     }
   
     render() {
@@ -100,3 +123,6 @@ function Text(props) {
   }
 
   export default CV;
+
+
+  
