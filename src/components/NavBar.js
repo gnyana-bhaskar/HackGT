@@ -21,10 +21,10 @@ const NavBar = props => {
       >
         <Link to="/">
           <Heading as="h1" size="md" letterSpacing={"-.1rem"}>
-          Name
+          sustainbl.
           </Heading>
         </Link>
-        <Link to="/browse">
+        <Link to="/dashboard" >
         <Button
         ml={6}
         size="sm"
@@ -41,7 +41,7 @@ const NavBar = props => {
           ],
         }}
         >
-          Browse
+          Dashboard
         </Button>
         </Link>
         <Link to="/go-live">
